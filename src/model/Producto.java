@@ -1,6 +1,4 @@
-package todo;
-
-import java.text.SimpleDateFormat;
+package model;
 
 public class Producto {
 
@@ -8,14 +6,14 @@ public class Producto {
 
 	private String nombre;
 
-	private String fechaDePublicación;
+	private String fechaDePublicacion;
 
-	public String getFechaDePublicación() {
-		return fechaDePublicación;
+	public String getFechaDePublicacion() {
+		return fechaDePublicacion;
 	}
 
-	public void setFechaDePublicación(String fechaDePublicación) {
-		this.fechaDePublicación = fechaDePublicación;
+	public void setFechaDePublicacion(String fechaDePublicacion) {
+		this.fechaDePublicacion = fechaDePublicacion;
 	}
 
 	public String getCategoria() {

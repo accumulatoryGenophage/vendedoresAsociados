@@ -1,4 +1,4 @@
-package todo;
+package model;
 
 public class Vector {
 

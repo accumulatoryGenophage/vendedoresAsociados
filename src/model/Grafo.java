@@ -1,4 +1,4 @@
-package todo;
+package model;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -52,7 +52,7 @@ public class Grafo {
 		}
 
 		if (flag) {
-			JOptionPane.showMessageDialog(null, "El nombre ya está registrado, debe ingresar uno nuevo");
+			JOptionPane.showMessageDialog(null, "El nombre ya estï¿½ registrado, debe ingresar uno nuevo");
 			return verificarNombre(grafo);
 		}
 
@@ -75,7 +75,7 @@ public class Grafo {
 			producto.setNombre(JOptionPane.showInputDialog(null, "Ingrese el nombre del producto"));
 			producto.setCategoria(
 					JOptionPane.showInputDialog(null, "Ingrese la categoria a la que pertenece el producto"));
-			producto.setFechaDePublicación(
+			producto.setFechaDePublicacion(
 					new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").format(Calendar.getInstance().getTime()));
 			productos.add(producto);
 			return agregarProductos(productos);
@@ -144,12 +144,12 @@ public class Grafo {
 
 			else if (nodo1.getAsociados().size() == 10) {
 				JOptionPane.showMessageDialog(null,
-						"No se puede crear la conexión puesto que usted ya cuenta con la cantidad permitida (10) ");
+						"No se puede crear la conexiï¿½n puesto que usted ya cuenta con la cantidad permitida (10) ");
 			}
 
 			else if (nodo2.getAsociados().size() == 10) {
 				JOptionPane.showMessageDialog(null,
-						"No se puede crear la conexión puesto que el vendedor al cual trata de solicitar la asociacion ya cuenta con la cantidad permitida (10) ");
+						"No se puede crear la conexiï¿½n puesto que el vendedor al cual trata de solicitar la asociacion ya cuenta con la cantidad permitida (10) ");
 			}
 
 			else {
